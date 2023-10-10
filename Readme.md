@@ -1,5 +1,5 @@
 # Personal Portfolio 🔥
-> [https://shi.github.io/](https://vibhamaurya011.github.io/)
+> https://vibhamaurya011.github.io/)
 
 :star: Star me on GitHub — it helps!
 
@@ -10,15 +10,18 @@
 
 ### Website Preview
 #### Home Page
-<img src="website_images/HomePage.gif" width="900">
+<img width="960" alt="image" src="https://github.com/vibhamaurya011/vibhamaurya011.github.io/assets/130361889/31cb9e58-c758-4344-bfb7-88db414fd93c">
+
 
 
 #### About Page
-<img src="website_images/AboutPage.png" width="900">
+<img width="960" alt="image" src="https://github.com/vibhamaurya011/vibhamaurya011.github.io/assets/130361889/27184d83-a662-44af-80b5-171c7ed66d47">
 
 
-#### Projects Page
-<img src="website_images/ProjectPage.png" width="900">
+
+#### Contect Page
+<img width="960" alt="image" src="https://github.com/vibhamaurya011/vibhamaurya011.github.io/assets/130361889/4ae96f68-b8f9-4858-8721-0e44a86cb6ef">
+
   
 
 

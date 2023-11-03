@@ -12,8 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -41,7 +39,9 @@
             <div class="home-content">
                 <div class="text-1">Hello, I'm a </div>
                 <div class="text-2">Full Stack Developer</div>
+                <a id="resume-button-2" href="https://drive.google.com/file/d/14rL19yQQzP19iVcWkobFs_7HwCk5zM9r/view?usp=sharing" target="_blank">Resume</a>
             </div>
+            
         </div>
     </section>
 
@@ -96,7 +96,7 @@
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
-            <div class="skills-content">
+            <div class="skills-content skills-card-img">
                 <div class="column left skills-card">
                     <div class="skills-images">
                         <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
@@ -120,7 +120,7 @@
                         <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--YbV36HLj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/hpg6if7btrwilqkidqbe.png" alt="">
                     </div>
                     <div class="skills-images">
-                        <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="">
                     </div>
                     <div class="skills-images">
                         <img src="https://mms.businesswire.com/media/20230322005274/en/761650/23/postman-logo-vert-2018.jpg" alt="">
@@ -135,220 +135,156 @@
     <section class="project" id="projects">
         <div class="max-width">
             <h2 class="title">Projects</h2>
-            <div class="carousel owl-carousel">
+            <div class="carousel owl-carousel project-card">
 
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
-                        <img src="data:image/png;base64,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" alt="">
-                        <div class="text">KindMeal.my</div>
+                        <img class="project-image" src="./assets/project 1.png" alt="CryptoTracker">
+                        <div class="text">CryptoTracker</div>
                         <p>About</p></br>
-                      <p>KindMeal is Malaysia's (and possibly the world's!) pioneering meat-free lifestyle platform.</p></br>
-                      <p class="techStack">Tech Used: HTML, CSS, JavaScript</p>
+                      <p>CryptoTracker is a web app for real-time cryptocurrency data tracking. Monitor prices, view historical charts, manage your portfolio, and stay updated with the latest crypto news.</p></br>
+                      <p class="techStack">Tech Used: React JS, MUI, CoineGecko API</p>
                         <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/Devashishsaurabh/KindMeal.my-Clone" target="_blank"> Git Repo </a></span>
+                                <span>  <a href="https://github.com/vibhamaurya011/crypto-tracker" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="https://lighthearted-cucurucho-a41af6.netlify.app" target="_blank">  Live Site  </a></span>
+                                <span> <a href="https://crypto-tracker-omega-three.vercel.app/" target="_blank">  Live Site  </a></span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
-                        <img src="./images/online shoping.jpg" alt="">
-                        <div class="text">Online Shoping REST-API</div>
+                        <img src="./assets/project 2.png" alt="">
+                        <div class="text">Money Mingle</div>
                         <p>About</p></br>
-                        <p>This is RESTFul API for online shoping. Use can add product to cart, order item, and payment amount</p></br>
-                            <p class="techStack">Tech Used: Java, Spring, SQL, Hibernate</p>
+                        <p>"Money Mingle" is your financial companion, designed to simplify money management and foster financial well-being. This intuitive application empowers users to effortlessly track expenses, set budgets, and achieve their financial goals.</p></br>
+                            <p class="techStack">Tech Used: React JS, APIs, JSON, Styled Components</p>
                             <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/Grajoria0083/E-Commerce-REST-API/tree/master" target="_blank"> Git Repo </a></span>
+                                <span>  <a href="https://github.com/vibhamaurya011/near-steel-1499-shivam" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="https://e-commerce-rest-api-production.up.railway.app/swagger-ui/#/" target="_blank">Live Link </a></span>
+                                <span> <a href="https://near-steel-1499-shivam.vercel.app/" target="_blank">Live Link </a></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
-                        <img src="./images/bus4.jpg" alt="">
-                        <div class="text">Bus-Reservation-System</div>
+                        <img src="./assets/project 3.png" alt="">
+                        <div class="text">ClickOne</div>
                         <p>About</p></br>
-                        <p>This is a bus reservation system for backend service. It helps user to create account and book bus service.</p></br>
-                            <p class="techStack">Tech Used: Java, Spring, SQL, Hibernate</p>
+                        <p>"ClickOne" is a dynamic ecommerce site meticulously crafted by a collaborative team of five members. This platform seamlessly blends our collective skills and knowledge to deliver a captivating online shopping experience.</p></br>
+                            <p class="techStack">Tech Used: React JS, APIs, JSON, GitHub</p>
                             <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/Grajoria0083/Bus-Reservation-System" target="_blank"> Git Repo </a></span>
+                                <span>  <a href="https://github.com/vibhamaurya011/decisive-duck-1364" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="" target="_blank">Demo Video </a></span>
+                                <span> <a href="https://decisive-duck-1364-gnpxi9z2r-vk10082000.vercel.app/" target="_blank">Live Link </a></span>
 
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="card">
+                <div class="card project-card">
                     <div class="box">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO7NHIVtHyaReuNW0d3hod49_I4O-WiIp7Ug&usqp=CAU" alt="">
-                        <div class="text">reliencedigital.in</div>
+                        <img src="./assets/project 4.png" alt="">
+                        <div class="text">Shivam Maurya</div>
                         <p>About</p></br>
-                        <p>Clone Reliance Digital which is an Indian consumer electronics retailer. It is a subsidiary of Reliance Retail.</p></br>
+                        <p>About
+                            Explore my web development journey through a collection of projects and contributions. Discover my passion for technology and innovation.</p></br>
                         <p class="techStack">Tech Used: HTML, CSS, JS, bootstap </p>
                         <div class="repo-links">
                             <div class="repo-div">
-                                <span>  <a href="https://github.com/Grajoria0083/individual-project" target="_blank"> Git Repo </a></span>
+                                <span>  <a href="https://github.com/vibhamaurya011/vibhamaurya011.github.io" target="_blank"> Git Repo </a></span>
                             </div>
                             <div class="demo-div">
-                                <span> <a href="https://celebrated-croquembouche-d6d271.netlify.app" target="_blank">  Live Site  </a></span>
+                                <span> <a href="https://vibhamaurya011.github.io/" target="_blank">  Live Site  </a></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
- <section class="github-statics" id="github-statics">
-    <h2 class="title">Github-statics</h2>
-   <p style="text-align: center;">
-     
-    <img  src="https://github-readme-stats.vercel.app/api?username=grajoria0083&show_icons=true&locale=en" alt="grajoria0083" /><br>
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=grajoria0083&" alt="grajoria0083" /><br>
-    <img  src= "https://github-readme-stats.vercel.app/api/top-langs?username=grajoria0083&show_icons=true&locale=en&layout=compact" alt="grajoria0083" /><br>
+        </section>
 
-   </p>
- </section>
+        <!-- contact section start -->
 
-
-   
-   <section class="github-calendar" id="github-statics">
-    <h2 class="title">Github-Calendar</h2>
-
-
-   <div class="calendar">
-    <!-- Loading stuff -->
-    
-    
-    
-</div>
-
- </section>
-
-
-
-
-
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</p>
-                    <div class="icons" id="contact-github">
-                        <div class="row">
-                            <a href=" mailto:shivammaurya011@gmail.com">   <i class="fas fa-envelope"></i> </a>
-                            <div class="info">
-                                <div class="head"></div>
-                                <div class="sub-title">  <a href="mailto:shivammaurya011@gmail.com"> Email Id </a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="https://www.linkedin.com/in/shivammaurya011/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Address</div> -->
-                                <div class="sub-title">  <a href="https://www.linkedin.com/in/shivammaurya011/" target="_blank">Linkedin</a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="https://github.com/vibhamaurya011" target="_blank"> <i class="fab fa-github"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Email</div> -->
-                                <div class="sub-title"> <a href="https://github.com/vibhamaurya011" target="_blank" >GitHub</a> </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fas fa-phone-alt"></i>
-                           <div class="info">
-                               <!-- <div class="head">Email</div> -->
-                               <div class="sub-title"> +91 7905861940</div>
-                           </div>
-                       </div>
-
-                        
-
-                    </div>
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in Touch</div>
+                        <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</p>
+                        <div class="icons" id="contact-github">
+                            <div class="row">
+                                <a href=" mailto:shivammaurya011@gmail.com">   <i class="fas fa-envelope"></i> </a>
+                                <div class="info">
+                                    <div class="head"></div>
+                                    <div class="sub-title">  <a href="mailto:shivammaurya011@gmail.com"> Email Id </a> </div>
                                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form id="myForm">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" name="user_name" placeholder="Name" required>
                             </div>
-                            <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
+                            <div class="row">
+                                    <a href="https://www.linkedin.com/in/shivammaurya011/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                                <div class="info">
+                                    <!-- <div class="head">Address</div> -->
+                                    <div class="sub-title">  <a href="https://www.linkedin.com/in/shivammaurya011/" target="_blank">Linkedin</a> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <a href="https://github.com/vibhamaurya011" target="_blank"> <i class="fab fa-github"></i> </a>
+                                <div class="info">
+                                    <!-- <div class="head">Email</div> -->
+                                    <div class="sub-title"> <a href="https://github.com/vibhamaurya011" target="_blank" >GitHub</a> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="info">
+                                    <!-- <div class="head">Email</div> -->
+                                    <div class="sub-title"> +91 7905861940</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                                    </div>
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form id="myForm">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" name="user_name" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                            </div>
+                            <div class="button-area">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-
-   
- 
-
-
-   
-   
-   
-   
-   
-
-
-
-      <!-- <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=grajoria0083&show_icons=true&locale=en&layout=compact" alt="grajoria0083" /></p> -->
-
-<!-- <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=grajoria0083&show_icons=true&locale=en" alt="grajoria0083" /></p> -->
-
-<!-- <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=grajoria0083&" alt="grajoria0083" /></p> -->
-
-
-
-
-    <!-- footer section start -->
-    <footer>
-        <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        </section>
+        <!-- footer section start -->
+        <footer>
+            <span class="far fa-copyright"></span> 2023 All rights reserved. <i>Shivam Maurya</i></span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
-
-
 
 
 <script>
@@ -379,17 +315,3 @@
             emailjs.init("794kzP2GV8IBa0UGX");
           })();
         </script>
-
-<script>
-    // GitHubCalendar(".calendar", "Grajoria0083");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "Grajoria0083", { responsive: true });
-
-    // Use a proxy
-    // GitHubCalendar(".calendar", "your-username", {
-    //    proxy (username) {
-        //  return fetch(`https://your-proxy.com/github?user=${username}`)
-    //    }
-    // }).then(r => r.text())
-</script>

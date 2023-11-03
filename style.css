@@ -325,6 +325,12 @@
   }
   
   /* skills section styling */
+
+  .skills{
+    background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
+    background-size: cover;
+     background-attachment: fixed;
+   }
   .skills-images img {
     height: 150px;
     width: 150px;
@@ -525,16 +531,15 @@
     height: 120px;
     margin-bottom:30px;
   }
+  .project-image {
+    object-fit: cover;
+  }
   
-  /* .github-statics { */
-    /* margin-top: 20px; */
-
-  /* } */
-
-  /* contact section styling */
-  /* .contact .title::after {
-    content: "Get In Touch";
-  } */
+  .contact{
+    background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
+    background-size: cover;
+     background-attachment: fixed;
+   }
   .contact .contact-content .column {
     width: calc(50% - 30px);
   }

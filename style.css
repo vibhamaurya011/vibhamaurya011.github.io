@@ -172,7 +172,7 @@
   }
   
   /* home section styling */
-  .home {
+  .home1 {
     display: flex;
     background: url("assets/bg.jpg") no-repeat center;
     background-color: #111;
@@ -183,30 +183,30 @@
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
   }
-  .home .max-width {
+  .home1 .max-width {
     width: 100%;
     display: flex;
   }
-  .home .max-width .row {
+  .home1 .max-width .row {
     margin-right: 0;
   }
-  .home .home-content .text-1 {
+  .home1 .home-content .text-1 {
     font-size: 27px;
   }
-  .home .home-content .text-2 {
+  .home1 .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
   }
-  .home .home-content .text-3 {
+  .home1 .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
   }
-  .home .home-content .text-3 span {
+  .home1 .home-content .text-3 span {
     color: #92bcb5;
     font-weight: 500;
   }
-  .home .home-content a {
+  .home1 .home-content a {
     display: inline-block;
     background: #92bcb5;
     color: #fff;
@@ -218,42 +218,42 @@
     border: 2px solid #92bcb5;
     transition: all 0.3s ease;
   }
-  .home .home-content a:hover {
+  .home1 .home-content a:hover {
     color: #92bcb5;
     background: none;
   }
   
   /* about section styling */
-  .about{
+  .about1{
    background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
    background-size: cover;
     background-attachment: fixed;
   }
-  .about .about-content .left {
+  .about1 .about-content .left {
     width: 45%;
   }
-  .about .about-content .left img {
+  .about1 .about-content .left img {
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 150px 150px;
   }
-  .about .about-content .right {
+  .about1 .about-content .right {
     width: 55%;
   }
-  .about .about-content .right .text {
+  .about1 .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .about .about-content .right .text span {
+  .about1 .about-content .right .text span {
     color: #92bcb5;
     
   }
-  .about .about-content .right p {
+  .about1 .about-content .right p {
     text-align: justify;
   }
-  .about .about-content .right a {
+  .about1 .about-content .right a {
     display: inline-block;
     background: #92bcb5;
     color: #fff;
@@ -265,32 +265,32 @@
     border: 2px solid #92bcb5;
     transition: all 0.3s ease;
   }
-  .about .about-content .right a:hover {
+  .about1 .about-content .right a:hover {
     color: #92bcb5;
     background: none;
   }
-  .about .title::after {
+  .about1 .title::after {
     
     color: red;
   }
   
   /* services section styling */
-  .services,
-  .project {
+  .services1,
+  .project1 {
     color: #fff;
     background: #111;
   }
-  .services .title::before,
-  .project .title::before {
+  .services1 .title::before,
+  .project1 .title::before {
     
     background: #fff;
   }
-  .services .title::after,
-  .project .title::after {
+  .services1 .title::after,
+  .project1 .title::after {
     background: #111;
     /* content: "What I Provide"; */
   }
-  .services .serv-content .card {
+  .services1 .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -299,26 +299,26 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .services .serv-content .card:hover {
+  .services1 .serv-content .card:hover {
     background: #92bcb5;
     color: #555;
     /* change*/
   }
-  .services .serv-content .card .box {
+  .services1 .serv-content .card .box {
     transition: all 0.3s ease;
   }
-  .services .serv-content .card:hover .box {
+  .services1 .serv-content .card:hover .box {
     transform: scale(1.05);
   }
-  .services .serv-content .card i {
+  .services1 .serv-content .card i {
     font-size: 50px;
     color: #92bcb5;
     transition: color 0.3s ease;
   }
-  .services .serv-content .card:hover i {
+  .services1 .serv-content .card:hover i {
     color: #000;
   }
-  .services .serv-content .card .text {
+  .services1 .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -326,7 +326,7 @@
   
   /* skills section styling */
 
-  .skills{
+  .skills1{
     background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
     background-size: cover;
      background-attachment: fixed;
@@ -349,22 +349,22 @@
   } */
   
   /* skills right column */
-  .skills .skills-content .column {
+  .skills1 .skills-content .column {
     width: calc(50% - 30px);
     /* border: 2px solid black; */
     height: 60vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .skills .skills-content .left .text {
+  .skills1 .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .skills .skills-content .left p {
+  .skills1 .skills-content .left p {
     text-align: justify;
   }
-  .skills .skills-content .left a {
+  .skills1 .skills-content .left a {
     display: inline-block;
     background: #92bcb5;
     color: #fff;
@@ -376,30 +376,30 @@
     border: 2px solid #92bcb5;
     transition: all 0.3s ease;
   }
-  .skills .skills-content .left a:hover {
+  .skills1 .skills-content .left a:hover {
     color: #92bcb5;
     background: none;
   }
-  .skills .skills-content .right .bars {
+  .skills1 .skills-content .right .bars {
     margin-bottom: 15px;
   }
-  .skills .skills-content .right .info {
+  .skills1 .skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
   }
-  .skills .skills-content .right span {
+  .skills1 .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
   }
-  .skills .skills-content .right .line {
+  .skills1 .skills-content .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
   }
-  .skills .skills-content .right .line::before {
+  .skills1 .skills-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -427,7 +427,7 @@
   /* .project .title::after {
     content: "See My Work";
   } */
-  .project .carousel .card {
+  .project1 .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -435,22 +435,22 @@
     overflow: hidden;
     transition: all 0.3s ease;
   }
-  .project .carousel .card:hover {
+  .project1 .carousel .card:hover {
     background: #92bcb5;
     color: #000;
     /* change */
   }
-  .project .carousel .card .box {
+  .project1 .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
   }
-  .project .carousel .card:hover .box {
+  .project1 .carousel .card:hover .box {
     transform: scale(1.05);
   }
-  .project .carousel .card .text {
+  .project1 .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -535,69 +535,69 @@
     object-fit: cover;
   }
   
-  .contact{
+  .contact1{
     background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
     background-size: cover;
      background-attachment: fixed;
    }
-  .contact .contact-content .column {
+  .contact1 .contact-content .column {
     width: calc(50% - 30px);
   }
-  .contact .contact-content .text {
+  .contact1 .contact-content .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  .contact .contact-content .left p {
+  .contact1 .contact-content .left p {
     text-align: justify;
   }
-  .contact .contact-content .left .icons {
+  .contact1 .contact-content .left .icons {
     margin: 10px 0;
   }
-  .contact .contact-content .row {
+  .contact1 .contact-content .row {
     display: flex;
     height: 65px;
     align-items: center;
   }
-  .contact .contact-content .row .info {
+  .contact1 .contact-content .row .info {
     margin-left: 30px;
   }
-  .contact .contact-content .row i {
+  .contact1 .contact-content .row i {
     font-size: 25px;
     color: #92bcb5;
   }
-  .contact .contact-content .info .head {
+  .contact1 .contact-content .info .head {
     font-weight: 500;
   }
   
-  .contact .contact-content .info a,
-  .contact .contact-content .info a:hover,
-  .contact .contact-content .info a:link {
+  .contact1 .contact-content .info a,
+  .contact1 .contact-content .info a:hover,
+  .contact1 .contact-content .info a:link {
     text-decoration: none;
     color: #111;
   }
   
-  .contact .contact-content .info .sub-title {
+  .contact1 .contact-content .info .sub-title {
     color: #333;
   }
-  .contact .right form .fields {
+  .contact1 .right form .fields {
     display: flex;
   }
-  .contact .right form .field,
-  .contact .right form .fields .field {
+  .contact1 .right form .field,
+  .contact1 .right form .fields .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
   }
-  .contact .right form .textarea {
+  .contact1 .right form .textarea {
     height: 80px;
     width: 100%;
   }
-  .contact .right form .name {
+  .contact1 .right form .name {
     margin-right: 10px;
   }
-  .contact .right form .field input,
-  .contact .right form .textarea textarea {
+  .contact1 .right form .field input,
+  .contact1 .right form .textarea textarea {
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -608,15 +608,15 @@
     font-family: "Poppins", sans-serif;
     transition: all 0.3s ease;
   }
-  .contact .right form .field input:focus,
-  .contact .right form .textarea textarea:focus {
+  .contact1 .right form .field input:focus,
+  .contact1 .right form .textarea textarea:focus {
     border-color: #b3b3b3;
   }
-  .contact .right form .textarea textarea {
+  .contact1 .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
   }
-  .contact .right form .button-area {
+  .contact1 .right form .button-area {
     display: flex;
     align-items: center;
   }
@@ -656,7 +656,7 @@
   
   /* responsive media query start */
   @media (max-width: 1104px) {
-    .about .about-content .left img {
+    .about1 .about-content .left img {
       height: 350px;
       width: 350px;
     }
@@ -697,36 +697,36 @@
       margin: 20px 0;
       font-size: 25px;
     }
-    .home .home-content .text-2 {
+    .home1 .home-content .text-2 {
       font-size: 70px;
     }
-    .home .home-content .text-3 {
+    .home1 .home-content .text-3 {
       font-size: 35px;
     }
-    .home .home-content a {
+    .home1 .home-content a {
       font-size: 23px;
       padding: 10px 30px;
     }
     .max-width {
       max-width: 930px;
     }
-    .about .about-content .column {
+    .about1 .about-content .column {
       width: 100%;
     }
-    .about .about-content .left {
+    .about1 .about-content .left {
       display: flex;
       justify-content: center;
       margin: 0 auto 60px;
     }
-    .about .about-content .right {
+    .about1 .about-content .right {
       flex: 100%;
     }
-    .services .serv-content .card {
+    .services1 .serv-content .card {
       width: calc(50% - 10px);
       margin-bottom: 20px;
     }
-    .skills .skills-content .column,
-    .contact .contact-content .column {
+    .skills1 .skills-content .column,
+    .contact1 .contact-content .column {
       width: 100%;
       margin-bottom: 35px;
     }
@@ -736,36 +736,36 @@
     .max-width {
       padding: 0 23px;
     }
-    .home .home-content .text-2 {
+    .home1 .home-content .text-2 {
       font-size: 60px;
     }
-    .home .home-content .text-3 {
+    .home1 .home-content .text-3 {
       font-size: 32px;
     }
-    .home .home-content a {
+    .home1 .home-content a {
       font-size: 20px;
     }
-    .services .serv-content .card {
+    .services1 .serv-content .card {
       width: 100%;
     }
   }
   
   @media (max-width: 500px) {
-    .home .home-content .text-2 {
+    .home1 .home-content .text-2 {
       font-size: 50px;
     }
-    .home .home-content .text-3 {
+    .home1 .home-content .text-3 {
       font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text {
+    .about1 .about-content .right .text,
+    .skills1 .skills-content .left .text {
       font-size: 19px;
     }
-    .contact .right form .fields {
+    .contact1 .right form .fields {
       flex-direction: column;
     }
-    .contact .right form .name,
-    .contact .right form .email {
+    .contact1 .right form .name,
+    .contact1 .right form .email {
       margin: 0;
     }
     .right form .error-box {

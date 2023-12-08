@@ -170,8 +170,40 @@
   .scroll-up-btn:hover {
     filter: brightness(90%);
   }
+
+  @media screen and (max-width: 950px) {
+    .navbar {
+      padding: 15px 3%;
+    }
+    .navbar .menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      max-width: 300px;
+      background-color: #333;
+      text-align: center;
+      z-index: 999;
+      box-sizing: border-box;
+    }
+    .navbar .menu.active {
+      display: block;
+    }
+    .navbar .menu li {
+      display: block;
+      margin-top: 15px;
+    }
+    .navbar .menu li a {
+      margin-left: 0;
+    }
+    .nav-link {
+      display: block;
+    }
+  }
   
   /* home section styling */
+
   .home1 {
     display: flex;
     background: url("assets/bg.jpg") no-repeat center;
@@ -290,6 +322,10 @@
     background: #111;
     /* content: "What I Provide"; */
   }
+  .services1 .serv-content{
+    display: flex;
+    justify-content: space-around;
+  }
   .services1 .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
@@ -347,6 +383,10 @@
   /* .skills .title::after {
     content: "What I Know";
   } */
+  .skills1 .skills-content{
+    display: flex;
+    justify-content: space-around;
+  }
   
   /* skills right column */
   .skills1 .skills-content .column {
@@ -424,121 +464,105 @@
   }
   
   /* project section styling */
-  /* .project .title::after {
-    content: "See My Work";
-  } */
-  .project1 .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  .project1 .carousel .card:hover {
-    background: #92bcb5;
-    color: #000;
-    /* change */
-  }
-  .project1 .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  .project1 .carousel .card:hover .box {
-    transform: scale(1.05);
-  }
-  .project1 .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
+
+.project1 .title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.project1 .project-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333; 
+}
+
+.project1 .carousel {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project1 .carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+.project1 .card {
+  flex: 0 0 auto;
+  width: 350px; /* Adjust width based on your design */
+  background-color: #fff; /* Card background color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project1 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project1 .project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project1 .project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555; /* Adjust text color as needed */
+}
+
+.project1 .techStack {
+  font-size: 14px;
+  color: #888; /* Adjust text color as needed */
+  margin-top: 15px;
+}
+
+.project1 .repo-links {
+  display: flex !important;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project1 .repo-div,
+.project1 .demo-div {
+  width: 45%; /* Adjust width based on your design */
+}
+
+.project1 .repo-div a,
+.project1 .demo-div a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #9a9f9e; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+}
+
+.project1 .repo-div a:hover,
+.project1 .demo-div a:hover {
+  background-color: #6f9e96; /* Hover state color */
+}
+
   
-  .repo-links {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 45px;
-    margin-top: 5%;
-    /* border: 2px solid wheat; */
-  }
-  
-  .repo-div {
-    display: flex;
-    width: 35%;
-    border: 1px solid white;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .demo-div {
-    display: flex;
-    width: 35%;
-    border: 1px solid white;
-    justify-content: center;
-    align-items: center;
-  }
-  .techStack {
-    color: purple;
-  }
-  
-  .demo-div a,
-  .repo-div a,
-  .repo-div a:link,
-  .demo-div a:link,
-  .techStack {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .project .carousel .card img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 5%;
-    border: 5px solid #92bcb5;
-    transition: all 0.3s ease;
-  }
-  .project .carousel .card:hover img {
-    border-color: #fff;
-    color: white;
-  }
-  .owl-dots {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #92bcb5 !important;
-    transition: all 0.3s ease;
-  }
-  .owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-  }
-  .owl-dot.active,
-  .owl-dot:hover {
-    background: #92bcb5 !important;
-  }
-  .skills-images {
-    width: 120px;
-    height: 120px;
-    margin-bottom:30px;
-  }
-  .project-image {
-    object-fit: cover;
-  }
   
   .contact1{
     background-image: url("https://images.rawpixel.com/image_400/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg");
     background-size: cover;
      background-attachment: fixed;
+   }
+   .contact1 .contact-content{
+    display: flex;
+    justify-content: space-around;
    }
   .contact1 .contact-content .column {
     width: calc(50% - 30px);
@@ -556,7 +580,7 @@
   }
   .contact1 .contact-content .row {
     display: flex;
-    height: 65px;
+    margin-top: 15px;
     align-items: center;
   }
   .contact1 .contact-content .row .info {
@@ -639,6 +663,44 @@
     color: #92bcb5;
     background: none;
   }
+
+  .github-cal-div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .github-cal-div h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .github-cal-div .calendar {
+    margin-bottom: 20px;
+  }
+  
+  .github-stats-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .github-stats-info img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .github-stats-info {
+      flex-direction: column;
+    }
+    
+    .github-stats-info img {
+      width: 100%;
+    }
+  }
+  
   /* footer section styling */
   footer {
     background: #111;
@@ -655,6 +717,49 @@
   }
   
   /* responsive media query start */
+  /* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .project1 .carousel .card {
+    padding: 15px;
+  }
+  .project1 .carousel .card .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project1 .carousel .card .text.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .project1 .carousel .card .project-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .project1 .carousel .card .techStack {
+    font-size: 14px;
+  }
+  .project1 .carousel .card .repo-links,
+  .project1 .carousel .card .repo-div,
+  .project1 .carousel .card .demo-div {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .project1 .carousel .card .repo-div,
+  .project1 .carousel .card .demo-div {
+    border: none;
+    justify-content: flex-start;
+  }
+  .project1 .carousel .card img.project-image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  .project1 .carousel .card .repo-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
   @media (max-width: 1104px) {
     .about1 .about-content .left img {
       height: 350px;

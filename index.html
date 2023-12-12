@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Shivam Maurya | Portfolio </title>
     <link rel="icon" type="image/x-icon" href="./assets/profile_image.png">
     <link rel="stylesheet" href="style.css">
@@ -25,9 +26,9 @@
             <li><a href="#skills" class="menu-btn nav-link skills">Skills</a></li>
             <li><a href="#projects" class="menu-btn nav-link projects">Projects</a></li>
             <li><a href="#contact" class="menu-btn nav-link contact" >Contact</a></li>
-            <li> <a id="resume-button-1" class="nav-link resume" href="./assets/Shivam-Maurya-Resume.pdf" download class="menu-btn">Resume</a></li>
+            <li><a id="resume-button-1" class="nav-link resume" href="./assets/Shivam-Maurya-Resume.pdf" download="Shivam-Maurya-Resume.pdf" onclick="downloadResume(event)">Resume</a></li>
         </ul>
-        <div class="nav-link">
+        <div id="menu-icon" class="nav-link">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
@@ -39,7 +40,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, I'm a </div>
                 <div class="text-2">Full Stack Developer</div>
-                <a id="resume-button-2" href="./assets/Shivam-Maurya-Resume.pdf" download>Resume</a>
+                <a id="resume-button-2" href="./assets/Shivam-Maurya-Resume.pdf" download="Shivam-Maurya-Resume.pdf" onclick="downloadResume(event)">Resume</a>
             </div>
             
         </div>
@@ -132,29 +133,29 @@
 
     <!-- project section start -->
 
-    <section class="project1" id="projects">
+    <div class="project-section" id="projects">
         <h2 class="title">Projects</h2>
-        <div style="padding-left: 25px;" class="carousel owl-carousel project-card">
-            <div class="card project-card">
+        <div class="main-project">
+            <div class="project-card">
                 <div class="box">
                     <img class="project-image" src="./assets/project 1.png" alt="CryptoTracker">
                     <div class="text project-title">CryptoTracker</div>
-                    <p>About</p></br>
-                    <p class="project-description">CryptoTracker is a web app for real-time cryptocurrency data tracking. Monitor prices, view historical charts, manage your portfolio, and stay updated with the latest crypto news.</p></br>
+                    <p>About</p><br>
+                    <p class="project-description">CryptoTracker is a web app for real-time cryptocurrency data tracking. Monitor prices, view historical charts, manage your portfolio, and stay updated with the latest crypto news.</p><br>
                     <p class="techStack">Tech Used: React JS, MUI, CoineGecko API</p>
                     <div class="repo-links">
                         <div class="repo-div">
-                            <span>  <a class="project-github-link" href="https://github.com/vibhamaurya011/crypto-tracker" target="_blank"> Git Repo </a></span>
+                            <span><a class="project-github-link" href="https://github.com/vibhamaurya011/crypto-tracker" target="_blank"> Git Repo </a></span>
                         </div>
                         <div class="demo-div">
-                            <span> <a class="project-deployed-link" href="https://crypto-tracker-omega-three.vercel.app/" target="_blank">  Live Site  </a></span>
+                            <span><a class="project-deployed-link" href="https://crypto-tracker-omega-three.vercel.app/" target="_blank"> Live Site </a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card project-card">
+            <div class="project-card">
                 <div class="box">
-                    <img src="./assets/project 2.png" alt="">
+                    <img class="project-image" src="./assets/project 2.png" alt="">
                     <div class="text project-title">Money Mingle</div>
                     <p>About</p></br>
                     <p class="project-description">"Money Mingle" is your financial companion, designed to simplify money management and foster financial well-being. This intuitive application empowers users to effortlessly track expenses, set budgets, and achieve their financial goals.</p></br>
@@ -169,9 +170,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card project-card">
+            <div class="project-card">
                 <div class="box">
-                    <img src="./assets/project 3.png" alt="">
+                    <img class="project-image" src="./assets/project 3.png" alt="">
                     <div class="text project-title">ClickOne</div>
                     <p>About</p></br>
                     <p class="project-description">"ClickOne" is a dynamic ecommerce site meticulously crafted by a collaborative team of five members. This platform seamlessly blends our collective skills and knowledge to deliver a captivating online shopping experience.</p></br>
@@ -186,9 +187,9 @@
                     </div>
                 </div>
             </div>
-            <div class="card project-card">
+            <!-- <div class="project-card">
                 <div class="box">
-                    <img src="./assets/project 4.png" alt="">
+                    <img class="project-image" src="./assets/project 4.png" alt="">
                     <div class="text project-title">Shivam Maurya</div>
                     <p>About</p></br>
                     <p class="project-description">Explore my web development journey through a collection of projects and contributions. Discover my passion for technology and innovation.</p></br>
@@ -202,9 +203,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            
         </div>
-    </section>
+    </div>
 
         <section>
             <div class="github-cal-div ">
@@ -316,6 +318,26 @@
 
 
 <script>
+    function downloadResume(event) {
+  event.preventDefault(); // Prevent the default behavior of the link
+
+  // Get the href attribute of the link
+  const resumeLink = event.currentTarget.getAttribute('href');
+
+  // Open the link in a new tab
+  window.open(resumeLink, '_blank');
+
+  // Trigger the download of the file
+  const filename = event.currentTarget.getAttribute('download');
+  const link = document.createElement('a');
+  link.href = resumeLink;
+  link.setAttribute('download', filename);
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
     document
       .getElementById("myForm")
       .addEventListener("submit", function (event) {
@@ -334,6 +356,24 @@
           }
         );
       });
+      const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.getElementById('nav-bar');
+
+// Toggle the 'active' class when the menu icon is clicked
+menuIcon.addEventListener('click', function() {
+  navMenu.classList.toggle('active');
+});
+
+// Get all submenu toggle elements
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+// Add click event listener to each submenu toggle
+submenuToggles.forEach(submenuToggle => {
+  submenuToggle.addEventListener('click', function(event) {
+    event.preventDefault();
+    this.classList.toggle('clicked');
+  });
+});
     </script>
     <script
           type="text/javascript"

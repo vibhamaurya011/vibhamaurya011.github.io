@@ -371,6 +371,33 @@
     margin: 10px 0 7px 0;
   }
   
+  /* Existing styles remain the same */
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+  .services1 .serv-content {
+    flex-direction: column; /* Stacking cards vertically */
+    align-items: center;
+  }
+
+  .services1 .serv-content .card {
+    width: calc(100% - 20px); /* Adjusting card width */
+    margin-bottom: 20px; /* Adding space between cards */
+  }
+
+  .services1 .serv-content .card .box {
+    padding: 30px 15px; /* Adjusting padding for the content box */
+  }
+
+  .services1 .serv-content .card i {
+    font-size: 40px; /* Reducing icon size */
+  }
+
+  .services1 .serv-content .card .text {
+    font-size: 20px; /* Adjusting text size */
+  }
+}
+
   /* skills section styling */
 
   .skills1{
@@ -474,6 +501,30 @@
     width: 70%;
   }
   
+  /* Keep your existing styles here */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .skills1 {
+    background-image: none; /* Removing the background image on smaller screens for better readability */
+  }
+
+  .skills-images img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .skills1 .skills-content {
+    flex-direction: column; /* Stacking columns on smaller screens */
+    align-items: center;
+  }
+
+  .skills1 .skills-content .column {
+    width: 100%; /* Full width for columns on smaller screens */
+    margin-bottom: 20px; /* Add space between columns */
+  }
+}
+
   /* project section styling */
 
   .project-section {
@@ -580,13 +631,26 @@
     }
   
     .project-section .project-card  {
-      width: 100%;
-      margin-bottom: 20px;
+      width: calc(100% - 30px); /* Adjusting width and margins */
+      margin: 0 auto 20px; /* Centering cards and adding bottom margin */
     }
   
     .project-section .project-image {
       width: 100%;
       height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  
+    .project-section .repo-links {
+      flex-direction: column; /* Stacking links vertically */
+      align-items: center;
+    }
+  
+    .project-section .repo-div,
+    .project-section .demo-div {
+      width: 100%; /* Full width for links */
+      margin-bottom: 10px; /* Adding space between links */
     }
   }
   

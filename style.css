@@ -368,6 +368,20 @@ section .title::after {
   color: red;
 }
 
+@media screen and (max-width: 350px) {
+  .about1 .about-content .left img {
+    display: none; /* Hide the left column containing the image */
+  }
+
+  .about1 .about-content .right {
+    width: 100%; /* Occupy full width to make text fill the space */
+  }
+
+  .about1 .about-content .right .text {
+    font-size: 20px; /* Adjust text size for better readability */
+  }
+}
+
 /* services section styling */
 .services1 {
   color: #fff;

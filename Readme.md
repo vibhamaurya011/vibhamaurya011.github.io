@@ -12,8 +12,6 @@
 #### Home Page
 <img width="960" alt="image" src="https://github.com/vibhamaurya011/vibhamaurya011.github.io/assets/130361889/31cb9e58-c758-4344-bfb7-88db414fd93c">
 
-
-
 #### About Page
 <img width="960" alt="image" src="https://github.com/vibhamaurya011/vibhamaurya011.github.io/assets/130361889/27184d83-a662-44af-80b5-171c7ed66d47">
 
